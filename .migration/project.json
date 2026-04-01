@@ -1,3 +1,8 @@
 {
-  "type": "xwalk"
+  "type": "xwalk",
+  "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
+  "contentHostUrl": "https://author-p24103-e71623.adobeaemcloud.com",
+  "aemSitePath": "/content/advenzo",
+  "aemAssetsFolderPath": "/content/dam/modernizer3-poc",
+  "baseUrl": "https://main--aep-mcp-aem-eds--epm-aem.aem.page"
 }
