@@ -298,14 +298,15 @@ body.advenzo .hero-featured .hero-featured-image {
     line-height: 26px;
   }
 
-  /* top text: top-left corner (image is on right) */
+  /* top text: top-left of text area (image is on right, text is on left) */
   body.advenzo .hero-featured .hero-featured-top-text {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 16px;
+    left: 48px;
     margin: 0;
-    padding: 16px 24px;
+    padding: 0;
     z-index: 1;
+    font-family: 'Inter', sans-serif;
   }
 }
 
@@ -342,14 +343,15 @@ body.advenzo .hero-featured .hero-featured-image {
     object-fit: cover;
   }
 
-  /* top text: top-right corner (image is on left) */
+  /* top text: top-left of text area (image is on left, text is on right at 50%) */
   body.advenzo .hero-featured.image-left .hero-featured-top-text {
     position: absolute;
-    top: 0;
-    right: 0;
-    left: auto;
+    top: 16px;
+    left: calc(50% + 48px);
+    right: auto;
     margin: 0;
-    padding: 16px 24px;
+    padding: 0;
     z-index: 1;
+    font-family: 'Inter', sans-serif;
   }
 }
