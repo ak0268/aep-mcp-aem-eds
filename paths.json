@@ -1,0 +1,15 @@
+{
+  "mappings": [
+    "/content/aep-mcp-aem-eds/:/",
+    "/content/aep-mcp-aem-eds/configuration:/.helix/config.json",
+    "/content/aep-mcp-aem-eds/metadata:/metadata.json",
+
+    "/content/advenzo/:/advenzo/",
+    "/content/advenzo/configuration:/advenzo/.helix/config.json",
+    "/content/advenzo/metadata:/advenzo/metadata.json"
+  ],
+  "includes": [
+    "/content/aep-mcp-aem-eds/",
+    "/content/advenzo"
+  ]
+}

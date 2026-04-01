@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Impersonate User</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./impersonation.css">
+  <script src="./impersonation.js"></script>
+</head>
+<body>
+  <h3>Impersonate User</h3>
+  <p>Enter an email to push into the Alloy identityMap. Stored locally until cleared.</p>
+  <form id="impersonation-form" novalidate>
+    <input type="email" id="email-input" name="impersonation-email" placeholder="user@example.com" required>
+    <div id="error-message" class="error" role="alert"></div>
+    <div class="actions">
+      <button type="submit" id="apply-btn">Apply</button>
+      <button type="button" class="clear" id="clear-btn">Clear</button>
+      <button type="button" class="close" id="close-btn">Close</button>
+    </div>
+  </form>
+</body>
+</html>

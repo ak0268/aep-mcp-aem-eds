@@ -1,0 +1,39 @@
+.cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-gap: 24px;
+}
+
+.cards > ul > li {
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cards .cards-card-body {
+  margin: 16px;
+}
+
+.cards .cards-card-image {
+  line-height: 0;
+}
+
+.section.dark .cards > ul > li {
+  background-color: #24211a;
+  border-color: #3a3730;
+}
+
+.section.black .cards > ul > li {
+  background-color: var(--header-bg-color);
+  border-color: #2a2a2d;
+}
+
+.cards > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
