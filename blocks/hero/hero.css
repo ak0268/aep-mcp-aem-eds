@@ -124,3 +124,92 @@
     min-height: 400px;
   }
 }
+
+/* advenzo theme overrides */
+body.advenzo .hero {
+  background-color: #f2f2f2;
+  border: 1px solid rgb(12 11 10 / 15%);
+  border-radius: 16px;
+  color: #0c0b0a;
+}
+
+body.advenzo .hero h1 {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: 0.72px;
+  color: #0c0b0a;
+}
+
+body.advenzo .hero p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 29px;
+  color: #0c0b0a;
+  opacity: 1;
+}
+
+body.advenzo .hero .hero-content {
+  gap: 32px;
+}
+
+body.advenzo .hero .hero-buttons {
+  gap: 16px;
+}
+
+body.advenzo .hero a.button:any-link {
+  border-radius: 12px;
+  padding: 6px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+body.advenzo .hero a.button:not(.secondary):any-link {
+  background-color: #d9572b;
+  border-color: #d9572b;
+  color: #fff;
+}
+
+body.advenzo .hero a.button:not(.secondary):hover {
+  background-color: #b8451f;
+  border-color: #b8451f;
+}
+
+body.advenzo .hero a.button.secondary:any-link {
+  background-color: transparent;
+  border: 1px solid rgb(12 11 10 / 15%);
+  color: #0c0b0a;
+}
+
+body.advenzo .hero a.button.secondary:hover {
+  border-color: #0c0b0a;
+}
+
+@media (width >= 900px) {
+  body.advenzo .hero {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  body.advenzo .hero .hero-content {
+    padding: 48px;
+  }
+
+  body.advenzo .hero h1 {
+    font-size: 72px;
+    line-height: 86px;
+  }
+
+  body.advenzo .hero p {
+    font-size: 18px;
+  }
+
+  body.advenzo .hero img {
+    height: 640px;
+    min-height: 640px;
+  }
+}

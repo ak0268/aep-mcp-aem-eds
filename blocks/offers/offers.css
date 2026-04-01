@@ -92,6 +92,70 @@
   background-color: #E86A33;
 }
 
+/* advenzo theme overrides */
+body.advenzo .offers {
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  min-height: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+body.advenzo .offers h2 {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 39px;
+  letter-spacing: 0.28px;
+  color: #0c0b0a;
+  text-align: center;
+  margin: 0;
+}
+
+body.advenzo .offers p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0c0b0a;
+  text-align: center;
+  margin: 0;
+}
+
+body.advenzo .offers .offer-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 0;
+}
+
+body.advenzo .offers a.button:any-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 12px;
+  padding: 6px 12px;
+  border: 1px solid rgb(12 11 10 / 15%);
+  background-color: transparent;
+  color: #0c0b0a;
+  position: static;
+  width: auto;
+  transform: none;
+}
+
+body.advenzo .offers a.button:hover {
+  border-color: #0c0b0a;
+  background-color: transparent;
+}
+
 /*
 .offers .glide__arrows {
   position: absolute;

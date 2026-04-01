@@ -290,3 +290,79 @@ main .section.right {
 main .section.highlight {
   background-color: var(--light-color);
 }
+
+/* ==========================================
+   advenzo theme overrides
+   ========================================== */
+body.advenzo {
+  font-family: 'Inter', sans-serif;
+  color: #0c0b0a;
+}
+
+body.advenzo h1,
+body.advenzo h2,
+body.advenzo h3,
+body.advenzo h4,
+body.advenzo h5,
+body.advenzo h6 {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 500;
+  color: #0c0b0a;
+}
+
+body.advenzo h1 {
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: 0.52px;
+}
+
+body.advenzo h2 {
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: 0.52px;
+}
+
+body.advenzo p {
+  font-family: 'Inter', sans-serif;
+  color: #0c0b0a;
+}
+
+/* advenzo primary button */
+body.advenzo a.button:any-link,
+body.advenzo button {
+  border-radius: 12px;
+  padding: 6px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #d9572b;
+  border: 1px solid #d9572b;
+  color: #fff;
+}
+
+body.advenzo a.button:hover,
+body.advenzo a.button:focus,
+body.advenzo button:hover,
+body.advenzo button:focus {
+  background-color: #b8451f;
+  border-color: #b8451f;
+}
+
+/* advenzo secondary button */
+body.advenzo a.button.secondary,
+body.advenzo button.secondary {
+  background-color: transparent;
+  border: 1px solid rgb(12 11 10 / 15%);
+  color: #0c0b0a;
+}
+
+body.advenzo a.button.secondary:hover,
+body.advenzo button.secondary:hover {
+  border-color: #0c0b0a;
+}
+
+/* advenzo section with light bg */
+body.advenzo main .section.light {
+  background-color: #f2f2f2;
+}

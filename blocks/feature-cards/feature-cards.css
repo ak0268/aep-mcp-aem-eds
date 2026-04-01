@@ -156,3 +156,161 @@
     font-size: var(--heading-font-size-l);
   }
 }
+
+/* advenzo theme overrides */
+body.advenzo .feature-cards-container > div {
+  max-width: 1280px;
+}
+
+body.advenzo .feature-cards .feature-cards-header {
+  max-width: 768px;
+  margin-inline: auto;
+  margin-bottom: 80px;
+}
+
+body.advenzo .feature-cards .feature-cards-header p.feature-cards-header-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: none;
+  color: #0c0b0a;
+  margin: 0 0 16px;
+}
+
+body.advenzo .feature-cards .feature-cards-header-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: 0.52px;
+  color: #0c0b0a;
+}
+
+body.advenzo .feature-cards .feature-cards-header-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  opacity: 1;
+  color: #0c0b0a;
+}
+
+body.advenzo .feature-cards > ul {
+  gap: 32px;
+}
+
+body.advenzo .feature-cards > ul > li {
+  border-radius: 16px;
+  background-color: #f2f2f2;
+  border: 1px solid rgb(12 11 10 / 15%);
+  min-height: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* remove gradient overlay */
+body.advenzo .feature-cards > ul > li::after {
+  display: none;
+}
+
+/* image: relative instead of absolute */
+body.advenzo .feature-cards .feature-cards-image {
+  position: relative;
+  inset: unset;
+  height: 360px;
+}
+
+/* content: normal flow, dark text */
+body.advenzo .feature-cards .feature-cards-content {
+  position: relative;
+  z-index: unset;
+  padding: 48px;
+  color: #0c0b0a;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1;
+}
+
+body.advenzo .feature-cards .feature-cards-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0c0b0a;
+  text-transform: none;
+  margin: 0 0 8px;
+}
+
+body.advenzo .feature-cards .feature-cards-content h2,
+body.advenzo .feature-cards .feature-cards-content h3 {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 53px;
+  letter-spacing: 0.44px;
+  color: #0c0b0a;
+  margin: 0 0 24px;
+}
+
+body.advenzo .feature-cards .feature-cards-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0c0b0a;
+  opacity: 1;
+}
+
+body.advenzo .feature-cards .feature-cards-content a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0c0b0a;
+  gap: 8px;
+}
+
+body.advenzo .feature-cards .feature-cards-content a:hover {
+  color: #0c0b0a;
+}
+
+body.advenzo .feature-cards .feature-cards-content .feature-cards-link {
+  margin: 0;
+}
+
+body.advenzo .feature-cards .feature-cards-content a.button:any-link {
+  border-radius: 12px;
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 1px solid rgb(12 11 10 / 15%);
+  background-color: transparent;
+  color: #0c0b0a;
+}
+
+body.advenzo .feature-cards .feature-cards-content a.button:hover {
+  border-color: #0c0b0a;
+  background-color: transparent;
+}
+
+@media (width >= 600px) {
+  body.advenzo .feature-cards > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  body.advenzo .feature-cards > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  body.advenzo .feature-cards > ul > li {
+    min-height: unset;
+  }
+
+  body.advenzo .feature-cards .feature-cards-content h2,
+  body.advenzo .feature-cards .feature-cards-content h3 {
+    font-size: 44px;
+    line-height: 53px;
+  }
+}
