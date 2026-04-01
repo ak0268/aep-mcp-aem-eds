@@ -244,8 +244,8 @@ body.advenzo .hero-featured .hero-featured-image {
   border-radius: 16px;
 }
 
-/* --- Default variant (image-right, Figma 4:815) ---
-   Card-style: bg, border, fixed height */
+/* --- Default variant (image-right, Figma 20:934) ---
+   Card-style: bg #f2f2f2, border, fixed height */
 @media (width >= 900px) {
   body.advenzo .hero-featured .hero-featured-content {
     flex-direction: row;
@@ -309,49 +309,37 @@ body.advenzo .hero-featured .hero-featured-image {
   }
 }
 
-/* --- image-left variant (Figma 4:839) ---
-   No card bg, side by side with gap */
+/* --- image-left variant (Figma 20:950) ---
+   Card-style with white bg, image on left, content on right */
 @media (width >= 900px) {
   body.advenzo .hero-featured.image-left .hero-featured-content {
     flex-direction: row-reverse;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    overflow: visible;
-    height: auto;
-    gap: 80px;
-    align-items: center;
+    background-color: #fff;
+    border: 1px solid rgb(12 11 10 / 15%);
+    border-radius: 16px;
+    overflow: hidden;
+    height: 640px;
+    gap: 0;
+    align-items: stretch;
   }
 
   body.advenzo .hero-featured.image-left .hero-featured-text {
-    padding: 0;
+    padding: 48px;
     flex: 1;
-    gap: 32px;
+    gap: 8px;
   }
 
   body.advenzo .hero-featured.image-left .hero-featured-image {
     flex: 1;
     max-width: 50%;
-    border-radius: 16px;
+    border-radius: 0;
     overflow: hidden;
-    height: 640px;
+    height: 100%;
   }
 
   body.advenzo .hero-featured.image-left .hero-featured-image img {
     height: 100%;
     object-fit: cover;
-  }
-
-  body.advenzo .hero-featured.image-left .hero-featured-body h2,
-  body.advenzo .hero-featured.image-left .hero-featured-body h3 {
-    font-size: 52px;
-    line-height: 62px;
-    letter-spacing: 0.52px;
-  }
-
-  body.advenzo .hero-featured.image-left .hero-featured-body p {
-    font-size: 18px;
-    line-height: 29px;
   }
 
   /* top text: top-right corner (image is on left) */
