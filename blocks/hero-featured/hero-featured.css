@@ -156,3 +156,212 @@
     font-weight: normal;
   }
 }
+
+/* ==========================================
+   advenzo theme overrides — hero-featured
+   ========================================== */
+body.advenzo .hero-featured {
+  position: relative;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+body.advenzo .hero-featured .hero-featured-top-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: normal;
+  opacity: 1;
+  color: #0c0b0a;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+body.advenzo .hero-featured .hero-featured-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 1;
+  color: #0c0b0a;
+  text-transform: none;
+  margin: 0 0 16px;
+}
+
+body.advenzo .hero-featured .hero-featured-body h2,
+body.advenzo .hero-featured .hero-featured-body h3 {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 53px;
+  letter-spacing: 0.44px;
+  color: #0c0b0a;
+  margin: 0 0 24px;
+}
+
+body.advenzo .hero-featured .hero-featured-body p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0c0b0a;
+}
+
+body.advenzo .hero-featured .hero-featured-body .button-container {
+  margin: 0 24px 0 0;
+}
+
+body.advenzo .hero-featured .hero-featured-body a.button:any-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  border: 1px solid rgb(12 11 10 / 15%);
+  background-color: transparent;
+  color: #0c0b0a;
+}
+
+body.advenzo .hero-featured .hero-featured-body a.button:hover {
+  border-color: #0c0b0a;
+  background-color: transparent;
+}
+
+body.advenzo .hero-featured .hero-featured-body .button-container em a.button.secondary {
+  padding: 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0c0b0a;
+}
+
+body.advenzo .hero-featured .hero-featured-body .button-container em a.button.secondary::after {
+  content: '\203A';
+  font-size: 1.3em;
+}
+
+body.advenzo .hero-featured .hero-featured-image {
+  border-radius: 16px;
+}
+
+/* --- Default variant (image-right, Figma 4:815) ---
+   Card-style: bg, border, fixed height */
+@media (width >= 900px) {
+  body.advenzo .hero-featured .hero-featured-content {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0;
+    background-color: #f2f2f2;
+    border: 1px solid rgb(12 11 10 / 15%);
+    border-radius: 16px;
+    overflow: hidden;
+    height: 640px;
+  }
+
+  body.advenzo .hero-featured .hero-featured-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 48px;
+    flex: 1;
+  }
+
+  body.advenzo .hero-featured .hero-featured-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  body.advenzo .hero-featured .hero-featured-image {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 0;
+    height: 100%;
+  }
+
+  body.advenzo .hero-featured .hero-featured-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  body.advenzo .hero-featured .hero-featured-body h2,
+  body.advenzo .hero-featured .hero-featured-body h3 {
+    font-size: 44px;
+    line-height: 53px;
+    letter-spacing: 0.44px;
+    font-weight: 500;
+  }
+
+  body.advenzo .hero-featured .hero-featured-body p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* top text: top-left corner (image is on right) */
+  body.advenzo .hero-featured .hero-featured-top-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 16px 24px;
+    z-index: 1;
+  }
+}
+
+/* --- image-left variant (Figma 4:839) ---
+   No card bg, side by side with gap */
+@media (width >= 900px) {
+  body.advenzo .hero-featured.image-left .hero-featured-content {
+    flex-direction: row-reverse;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+    height: auto;
+    gap: 80px;
+    align-items: center;
+  }
+
+  body.advenzo .hero-featured.image-left .hero-featured-text {
+    padding: 0;
+    flex: 1;
+    gap: 32px;
+  }
+
+  body.advenzo .hero-featured.image-left .hero-featured-image {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 640px;
+  }
+
+  body.advenzo .hero-featured.image-left .hero-featured-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  body.advenzo .hero-featured.image-left .hero-featured-body h2,
+  body.advenzo .hero-featured.image-left .hero-featured-body h3 {
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: 0.52px;
+  }
+
+  body.advenzo .hero-featured.image-left .hero-featured-body p {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  /* top text: top-right corner (image is on left) */
+  body.advenzo .hero-featured.image-left .hero-featured-top-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    margin: 0;
+    padding: 16px 24px;
+    z-index: 1;
+  }
+}
