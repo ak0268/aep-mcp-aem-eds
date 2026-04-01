@@ -40,86 +40,86 @@
 
 /* advenzo theme overrides */
 body.advenzo .cards > ul {
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 32px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 32px;
 }
 
 body.advenzo .cards > ul > li {
-  border: 1px solid rgb(12 11 10 / 15%);
-  background-color: #f2f2f2;
-  border-radius: 16px;
+    border: 1px solid rgb(12 11 10 / 15%);
+    background-color: #f2f2f2;
+    border-radius: 16px;
 }
 
 body.advenzo .cards > ul > li img {
-  height: 233px;
-  aspect-ratio: unset;
-  object-fit: cover;
+    height: 233px;
+    aspect-ratio: unset;
+    object-fit: cover;
 }
 
 body.advenzo .cards .cards-card-body {
-  margin: 0;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+    margin: 0;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 /* first paragraph as tagline label */
 body.advenzo .cards .cards-card-body > p:first-child {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #0c0b0a;
-  margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0c0b0a;
+    margin: 0;
 }
 
 /* heading */
 body.advenzo .cards .cards-card-body h2,
 body.advenzo .cards .cards-card-body h3 {
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 50px;
-  letter-spacing: 0.36px;
-  color: #0c0b0a;
-  margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 0.36px;
+    color: #0c0b0a;
+    margin: 0;
 }
 
 /* body text */
 body.advenzo .cards .cards-card-body p {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  color: #0c0b0a;
-  margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #0c0b0a;
+    margin: 0;
 }
 
 /* action links */
 body.advenzo .cards .cards-card-body a {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  color: #0c0b0a;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #0c0b0a;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 body.advenzo .cards .cards-card-body a:hover {
-  color: #0c0b0a;
-  text-decoration: none;
+    color: #0c0b0a;
+    text-decoration: none;
 }
 
 body.advenzo .cards .cards-card-body a.button:any-link {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  color: #0c0b0a;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: #0c0b0a;
 }
 
 body.advenzo .cards .cards-card-body a.button:hover {
-  background-color: transparent;
+    background-color: transparent;
 }

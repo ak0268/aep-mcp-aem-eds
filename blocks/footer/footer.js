@@ -41,7 +41,7 @@ function decorateSubscribeForm(section) {
  * @param {Element} block The footer block element
  */
 export default async function decorate(block) {
-  const footerMeta = getMetadata('footer');
+  const footerMeta = 'footer';
   const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
   const fragment = await loadFragment(footerPath);
 
