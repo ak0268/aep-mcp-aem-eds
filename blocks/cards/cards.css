@@ -95,31 +95,24 @@ body.advenzo .cards .cards-card-body p {
     margin: 0;
 }
 
-/* action links */
-body.advenzo .cards .cards-card-body a {
+/* links inside cards-card-body p: primary button style */
+body.advenzo .cards .cards-card-body p a:any-link {
+    display: inline-block;
+    background-color: #d9572b;
+    border: 1px solid #d9572b;
+    color: #fff;
+    border-radius: 12px;
+    padding: 6px 12px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    color: #0c0b0a;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-
-body.advenzo .cards .cards-card-body a:hover {
-    color: #0c0b0a;
     text-decoration: none;
 }
 
-body.advenzo .cards .cards-card-body a.button:any-link {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    color: #0c0b0a;
-}
-
-body.advenzo .cards .cards-card-body a.button:hover {
-    background-color: transparent;
+body.advenzo .cards .cards-card-body p a:hover {
+    background-color: #b8451f;
+    border-color: #b8451f;
+    color: #fff;
+    text-decoration: none;
 }
