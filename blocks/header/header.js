@@ -2,6 +2,7 @@ import { buildCarousel } from '../../libs/index.js';
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
+
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
 let currentIndex = 0;
@@ -111,8 +112,11 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
  */
 export default async function decorate(block) {
   // load nav as fragment
-  const navMeta = 'nav';
-  const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
+  const navMeta = getMetadata('nav');
+  let navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
+  if (window.location.pathname.startsWith('/advenzo') || window.location.pathname.startsWith('/content/advenzo')) {
+    navPath = '/advenzo/nav';
+  }
   const fragment = await loadFragment(navPath);
 
   // decorate nav DOM
@@ -136,7 +140,10 @@ export default async function decorate(block) {
     const logo = navBrand.querySelector('picture') || navBrand.querySelector('img');
     if (logo) {
       const a = document.createElement('a');
-      a.href = '/';
+      a.href =
+        window.location.pathname.startsWith('/advenzo') || window.location.pathname.startsWith('/content/advenzo')
+          ? '/advenzo/'
+          : '/';
       logo.parentElement.insertBefore(a, logo);
       a.append(logo);
     }

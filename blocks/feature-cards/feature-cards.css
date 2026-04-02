@@ -130,6 +130,7 @@
 .feature-cards .feature-cards-arrow {
     font-size: 1.3em;
     line-height: 1;
+    display: none;
 }
 
 @media (width >= 600px) {
@@ -181,7 +182,7 @@ body.advenzo .feature-cards .feature-cards-header p.feature-cards-header-label {
 body.advenzo .feature-cards .feature-cards-header-title {
     font-family: 'Comfortaa', sans-serif;
     font-weight: 500;
-    font-size: 52px;
+    font-size: 40px;
     line-height: 62px;
     letter-spacing: 0.52px;
     color: #0c0b0a;
@@ -229,7 +230,6 @@ body.advenzo .feature-cards .feature-cards-content {
     color: #0c0b0a;
     display: flex;
     flex-direction: column;
-    gap: 32px;
     flex: 1;
 }
 
@@ -240,14 +240,14 @@ body.advenzo .feature-cards .feature-cards-label {
     line-height: 24px;
     color: #0c0b0a;
     text-transform: none;
-    margin: 0 0 8px;
+    /*margin: 0 0 8px;*/
 }
 
 body.advenzo .feature-cards .feature-cards-content h2,
 body.advenzo .feature-cards .feature-cards-content h3 {
     font-family: 'Comfortaa', sans-serif;
     font-weight: 500;
-    font-size: 44px;
+    /*font-size: 44px;*/
     line-height: 53px;
     letter-spacing: 0.44px;
     color: #0c0b0a;
@@ -293,6 +293,27 @@ body.advenzo .feature-cards .feature-cards-content a.button:hover {
     background-color: transparent;
 }
 
+/* links inside feature-cards-link: primary button style */
+body.advenzo .feature-cards .feature-cards-link a:any-link {
+    display: inline-block;
+    background-color: #d9572b;
+    border: 1px solid #d9572b;
+    color: #fff;
+    border-radius: 12px;
+    padding: 6px 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+body.advenzo .feature-cards .feature-cards-link a:hover {
+    background-color: #b8451f;
+    border-color: #b8451f;
+    color: #fff;
+}
+
 @media (width >= 600px) {
     body.advenzo .feature-cards > ul {
         grid-template-columns: repeat(2, 1fr);
@@ -310,7 +331,7 @@ body.advenzo .feature-cards .feature-cards-content a.button:hover {
 
     body.advenzo .feature-cards .feature-cards-content h2,
     body.advenzo .feature-cards .feature-cards-content h3 {
-        font-size: 44px;
+        /*font-size: 44px;*/
         line-height: 53px;
     }
 }
