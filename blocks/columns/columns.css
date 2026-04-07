@@ -46,10 +46,33 @@ body.proventa .columns > div > div {
     color: #0d0700;
 }
 
-body.proventa .columns h2,
-body.proventa .columns h3,
-body.proventa .columns h4,
-body.proventa .columns h5 {
+/* H1: matches "WHAT WE OFFER" — Urbanist bold 72px */
+body.proventa .columns h1 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    color: #0d0700;
+    margin: 0 0 16px;
+}
+
+/* H2: matches "Professional tools for every trade" — Urbanist bold 28px */
+body.proventa .columns h2 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    color: #0d0700;
+    margin: 0 0 8px;
+}
+
+/* H3: matches "How fast do you ship?" — Inter bold 18px */
+body.proventa .columns h3 {
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 27px;
@@ -57,6 +80,26 @@ body.proventa .columns h5 {
     text-transform: none;
     color: #0d0700;
     margin: 0 0 8px;
+}
+
+body.proventa .columns h4,
+body.proventa .columns h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #0d0700;
+    margin: 0 0 8px;
+}
+
+/* Images inside columns: 250x250, rounded 8px */
+body.proventa .columns .columns-img-col img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 body.proventa .columns p {

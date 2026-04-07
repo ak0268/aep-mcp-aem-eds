@@ -452,11 +452,44 @@ body.proventa button.secondary:hover {
     background-color: transparent;
 }
 
-/* proventa section backgrounds */
+/* proventa section backgrounds — colors stay the same as no-bg */
 body.proventa main .section.light {
     background-color: #f2f2f2;
+    color: #0d0700;
 }
 
 body.proventa main .section.dark {
     background-color: #fff7e5;
+    color: #0d0700;
+}
+
+body.proventa main .section.light h1,
+body.proventa main .section.light h2,
+body.proventa main .section.light h3,
+body.proventa main .section.light h4,
+body.proventa main .section.light h5,
+body.proventa main .section.light h6,
+body.proventa main .section.dark h1,
+body.proventa main .section.dark h2,
+body.proventa main .section.dark h3,
+body.proventa main .section.dark h4,
+body.proventa main .section.dark h5,
+body.proventa main .section.dark h6 {
+    color: #0d0700;
+}
+
+body.proventa main .section.light p,
+body.proventa main .section.dark p {
+    color: #0d0700;
+}
+
+body.proventa main .section.light a:any-link,
+body.proventa main .section.dark a:any-link {
+    color: #0d0700;
+}
+
+body.proventa main .section.light .cards > ul > li,
+body.proventa main .section.dark .cards > ul > li {
+    background-color: #fff;
+    border-color: rgb(13 7 0 / 15%);
 }
