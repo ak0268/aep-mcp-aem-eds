@@ -14,7 +14,7 @@
   ],
   "includes": [
     "/content/aep-mcp-aem-eds/",
-    "/content/advenzo",
-    "/content/proventa"
+    "/content/advenzo/",
+    "/content/proventa/"
   ]
 }

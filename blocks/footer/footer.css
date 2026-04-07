@@ -422,11 +422,6 @@ body.proventa footer .footer p {
     color: #0d0700;
 }
 
-body.proventa footer .footer-logo picture img {
-    width: 84px;
-    height: 36px;
-}
-
 body.proventa footer .footer-nav .default-content-wrapper > ul {
     gap: 40px;
 }
@@ -517,6 +512,11 @@ body.proventa footer .footer-updates input[type="email"]::placeholder {
 
 body.proventa footer .footer-updates input[type="email"]:focus {
     border-color: #0d0700;
+}
+
+body.proventa header nav .nav-brand img {
+    height: 55px;
+    width: 185.4px;
 }
 
 body.proventa footer .footer-updates button {

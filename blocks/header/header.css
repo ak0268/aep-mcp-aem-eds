@@ -512,7 +512,6 @@ body.proventa header .nav-wrapper {
 
 body.proventa header nav {
     font-family: 'Inter', sans-serif;
-    height: 72px;
     max-width: 1280px;
     padding: 0 64px;
     gap: 0 32px;
@@ -524,11 +523,6 @@ body.proventa header nav[aria-expanded='true'] {
 
 body.proventa header nav a:any-link {
     color: #0d0700;
-}
-
-body.proventa header nav .nav-brand img {
-    width: 84px;
-    height: 36px;
 }
 
 body.proventa header nav .nav-hamburger-icon,

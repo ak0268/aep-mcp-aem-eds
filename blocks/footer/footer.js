@@ -1,7 +1,6 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
-
 function decorateSubscribeForm(section) {
   let inputEl = null;
   let buttonEl = null;
