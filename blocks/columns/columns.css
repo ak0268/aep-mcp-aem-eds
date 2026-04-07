@@ -35,6 +35,12 @@
 /* ==========================================
    proventa theme overrides — columns
    ========================================== */
+body.proventa .columns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 body.proventa .columns > div {
     gap: 32px;
 }
@@ -70,9 +76,8 @@ body.proventa .columns h2 {
     margin: 0 0 8px;
 }
 
-/* H3: matches "How fast do you ship?" — Inter bold 18px */
+/* H3: matches "How fast do you ship?" — bold 18px */
 body.proventa .columns h3 {
-    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 27px;
@@ -94,7 +99,12 @@ body.proventa .columns h5 {
     margin: 0 0 8px;
 }
 
-/* Images inside columns: 250x250, rounded 8px */
+/* Images inside columns: 250x250, rounded 8px, floated right */
+body.proventa .columns .columns-img-col {
+    display: flex;
+    justify-content: flex-end;
+}
+
 body.proventa .columns .columns-img-col img {
     width: 250px;
     height: 250px;

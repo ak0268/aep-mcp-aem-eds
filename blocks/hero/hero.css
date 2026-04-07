@@ -288,6 +288,11 @@ body.proventa .hero p {
     opacity: 1;
 }
 
+/* inline links inside hero text keep default color */
+body.proventa .hero .hero-content a:not(.button):any-link {
+    color: inherit;
+}
+
 body.proventa .hero .hero-buttons {
     justify-content: center;
     gap: 16px;
