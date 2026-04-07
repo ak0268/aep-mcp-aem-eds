@@ -6,10 +6,15 @@
 
     "/content/advenzo/:/advenzo/",
     "/content/advenzo/configuration:/advenzo/.helix/config.json",
-    "/content/advenzo/metadata:/advenzo/metadata.json"
+    "/content/advenzo/metadata:/advenzo/metadata.json",
+
+    "/content/proventa/:/proventa/",
+    "/content/proventa/configuration:/proventa/.helix/config.json",
+    "/content/proventa/metadata:/proventa/metadata.json"
   ],
   "includes": [
     "/content/aep-mcp-aem-eds/",
-    "/content/advenzo"
+    "/content/advenzo",
+    "/content/proventa"
   ]
 }

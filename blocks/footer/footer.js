@@ -47,6 +47,9 @@ export default async function decorate(block) {
   if (window.location.pathname.startsWith('/advenzo') || window.location.pathname.startsWith('/content/advenzo')) {
     footerPath = '/advenzo/footer';
   }
+  if (window.location.pathname.startsWith('/proventa') || window.location.pathname.startsWith('/content/proventa')) {
+    footerPath = '/proventa/footer';
+  }
   const fragment = await loadFragment(footerPath);
 
   block.textContent = '';

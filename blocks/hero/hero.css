@@ -213,3 +213,134 @@ body.advenzo .hero a.button.secondary:hover {
         min-height: 640px;
     }
 }
+
+/* ==========================================
+   proventa theme overrides — hero
+   ========================================== */
+body.proventa .hero {
+    position: relative;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    padding: 40px 24px;
+    overflow: hidden;
+}
+
+body.proventa .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 40%);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+body.proventa .hero .hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 768px;
+}
+
+body.proventa .hero .hero-image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    margin: 0;
+}
+
+body.proventa .hero .hero-image picture {
+    display: block;
+    height: 100%;
+}
+
+body.proventa .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body.proventa .hero h1 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+}
+
+body.proventa .hero p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    color: #fff;
+    opacity: 1;
+}
+
+body.proventa .hero .hero-buttons {
+    justify-content: center;
+    gap: 16px;
+}
+
+body.proventa .hero a.button:not(.secondary):any-link {
+    background-color: #ffb300;
+    border-color: #ffb300;
+    color: #0d0700;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-size: 16px;
+    box-shadow:
+        0 1px 2px 0 rgb(13 7 0 / 5%),
+        inset 0 -2px 1px rgb(0 0 0 / 20%),
+        inset 0 2px 1px rgb(255 255 255 / 25%);
+}
+
+body.proventa .hero a.button:not(.secondary):hover {
+    background-color: #e6a200;
+    border-color: #e6a200;
+}
+
+body.proventa .hero a.button.secondary:any-link {
+    background-color: transparent;
+    border: 1px solid rgb(255 255 255 / 40%);
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 24px;
+}
+
+@media (width >= 900px) {
+    body.proventa .hero {
+        min-height: 640px;
+        padding: 0 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body.proventa .hero h1 {
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -0.72px;
+    }
+
+    body.proventa .hero p {
+        font-size: 18px;
+    }
+
+    body.proventa .hero .hero-content {
+        gap: 32px;
+        padding: 0;
+    }
+}

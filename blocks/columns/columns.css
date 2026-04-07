@@ -31,3 +31,60 @@
     order: unset;
   }
 }
+
+/* ==========================================
+   proventa theme overrides — columns
+   ========================================== */
+body.proventa .columns > div {
+    gap: 32px;
+}
+
+body.proventa .columns > div > div {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0d0700;
+}
+
+body.proventa .columns h2,
+body.proventa .columns h3,
+body.proventa .columns h4,
+body.proventa .columns h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #0d0700;
+    margin: 0 0 8px;
+}
+
+body.proventa .columns p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0d0700;
+    margin: 0 0 16px;
+}
+
+body.proventa .columns a.button.secondary:any-link {
+    background-color: transparent;
+    border: 1px solid rgb(13 7 0 / 15%);
+    color: #0d0700;
+    border-radius: 6px;
+    padding: 10px 24px;
+    box-shadow: none;
+}
+
+body.proventa .columns a.button.secondary:hover {
+    border-color: #0d0700;
+    background-color: transparent;
+}
+
+@media (width >= 900px) {
+    body.proventa .columns > div {
+        gap: 64px;
+        align-items: flex-start;
+    }
+}

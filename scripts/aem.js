@@ -350,6 +350,9 @@ function decorateTemplateAndTheme() {
   if (window.location.pathname.startsWith('/advenzo') || window.location.pathname.startsWith('/content/advenzo')) {
     theme = 'advenzo';
   }
+  if (window.location.pathname.startsWith('/proventa') || window.location.pathname.startsWith('/content/proventa')) {
+    theme = 'proventa';
+  }
   if (theme) addClasses(document.body, theme);
 }
 

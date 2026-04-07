@@ -156,6 +156,67 @@ body.advenzo .offers a.button:hover {
     background-color: transparent;
 }
 
+/* ==========================================
+   proventa theme overrides — offers
+   ========================================== */
+body.proventa .offers {
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    min-height: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+body.proventa .offers h2 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+    color: #0d0700;
+    text-align: center;
+    margin: 0;
+}
+
+body.proventa .offers p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #0d0700;
+    text-align: center;
+    margin: 0;
+}
+
+body.proventa .offers a.button:any-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 6px;
+    padding: 10px 24px;
+    background-color: #ffb300;
+    border: 1px solid #ffb300;
+    color: #0d0700;
+    position: static;
+    width: auto;
+    transform: none;
+    box-shadow:
+        0 1px 2px 0 rgb(13 7 0 / 5%),
+        inset 0 -2px 1px rgb(0 0 0 / 20%),
+        inset 0 2px 1px rgb(255 255 255 / 25%);
+}
+
+body.proventa .offers a.button:hover {
+    background-color: #e6a200;
+    border-color: #e6a200;
+}
+
 /*
 .offers .glide__arrows {
   position: absolute;

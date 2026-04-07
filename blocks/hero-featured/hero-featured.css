@@ -355,3 +355,115 @@ body.advenzo .hero-featured .hero-featured-image {
         font-family: 'Inter', sans-serif;
     }
 }
+
+/* ==========================================
+   proventa theme overrides — hero-featured
+   ========================================== */
+body.proventa .hero-featured {
+    position: relative;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+body.proventa .hero-featured .hero-featured-top-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 1;
+    color: #0d0700;
+    padding: 0;
+    margin: 0 0 24px;
+}
+
+body.proventa .hero-featured .hero-featured-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 1;
+    color: #0d0700;
+    text-transform: none;
+}
+
+body.proventa .hero-featured .hero-featured-body h2,
+body.proventa .hero-featured .hero-featured-body h3 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+    color: #0d0700;
+    margin: 0 0 24px;
+}
+
+body.proventa .hero-featured .hero-featured-body p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #0d0700;
+}
+
+body.proventa .hero-featured .hero-featured-body a.button:any-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 24px;
+    border-radius: 6px;
+    background-color: #ffb300;
+    border: 1px solid #ffb300;
+    color: #0d0700;
+    box-shadow:
+        0 1px 2px 0 rgb(13 7 0 / 5%),
+        inset 0 -2px 1px rgb(0 0 0 / 20%),
+        inset 0 2px 1px rgb(255 255 255 / 25%);
+}
+
+body.proventa .hero-featured .hero-featured-body a.button:hover {
+    background-color: #e6a200;
+    border-color: #e6a200;
+}
+
+body.proventa .hero-featured .hero-featured-image {
+    border-radius: 8px;
+}
+
+@media (width >= 900px) {
+    body.proventa .hero-featured .hero-featured-content {
+        flex-direction: row;
+        align-items: center;
+        gap: 80px;
+    }
+
+    body.proventa .hero-featured .hero-featured-text {
+        flex: 1;
+    }
+
+    body.proventa .hero-featured .hero-featured-image {
+        flex: 1;
+        max-width: 50%;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 600px;
+    }
+
+    body.proventa .hero-featured .hero-featured-image img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    body.proventa .hero-featured .hero-featured-body h2,
+    body.proventa .hero-featured .hero-featured-body h3 {
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -0.72px;
+    }
+
+    /* image-left: same layout as default but reversed */
+    body.proventa .hero-featured.image-left .hero-featured-content {
+        flex-direction: row-reverse;
+        gap: 80px;
+    }
+}

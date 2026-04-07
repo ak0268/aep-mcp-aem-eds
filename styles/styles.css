@@ -366,3 +366,97 @@ body.advenzo button.secondary:hover {
 body.advenzo main .section.light {
     background-color: #f2f2f2;
 }
+
+/* ==========================================
+   proventa theme overrides
+   ========================================== */
+body.proventa {
+    font-family: 'Inter', sans-serif;
+    color: #0d0700;
+}
+
+body.proventa h1,
+body.proventa h2,
+body.proventa h3,
+body.proventa h4,
+body.proventa h5,
+body.proventa h6 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    color: #0d0700;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+}
+
+body.proventa h1 {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.72px;
+}
+
+body.proventa h2 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.48px;
+}
+
+body.proventa h3 {
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: -0.28px;
+}
+
+body.proventa p {
+    font-family: 'Inter', sans-serif;
+    color: #0d0700;
+}
+
+/* proventa primary button */
+body.proventa a.button:any-link,
+body.proventa button {
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #ffb300;
+    border: 1px solid #ffb300;
+    color: #0d0700;
+    box-shadow:
+        0 1px 2px 0 rgb(13 7 0 / 5%),
+        inset 0 -2px 1px rgb(0 0 0 / 20%),
+        inset 0 2px 1px rgb(255 255 255 / 25%);
+}
+
+body.proventa a.button:hover,
+body.proventa a.button:focus,
+body.proventa button:hover,
+body.proventa button:focus {
+    background-color: #e6a200;
+    border-color: #e6a200;
+}
+
+/* proventa secondary button */
+body.proventa a.button.secondary:any-link,
+body.proventa button.secondary {
+    background-color: transparent;
+    border: 1px solid rgb(13 7 0 / 15%);
+    color: #0d0700;
+    box-shadow: none;
+}
+
+body.proventa a.button.secondary:hover,
+body.proventa button.secondary:hover {
+    border-color: #0d0700;
+    background-color: transparent;
+}
+
+/* proventa section backgrounds */
+body.proventa main .section.light {
+    background-color: #f2f2f2;
+}
+
+body.proventa main .section.dark {
+    background-color: #fff7e5;
+}

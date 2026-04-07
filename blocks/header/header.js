@@ -117,6 +117,9 @@ export default async function decorate(block) {
   if (window.location.pathname.startsWith('/advenzo') || window.location.pathname.startsWith('/content/advenzo')) {
     navPath = '/advenzo/nav';
   }
+  if (window.location.pathname.startsWith('/proventa') || window.location.pathname.startsWith('/content/proventa')) {
+    navPath = '/proventa/nav';
+  }
   const fragment = await loadFragment(navPath);
 
   // decorate nav DOM
@@ -140,10 +143,11 @@ export default async function decorate(block) {
     const logo = navBrand.querySelector('picture') || navBrand.querySelector('img');
     if (logo) {
       const a = document.createElement('a');
-      a.href =
-        window.location.pathname.startsWith('/advenzo') || window.location.pathname.startsWith('/content/advenzo')
-          ? '/advenzo/'
-          : '/';
+      const isAdvenzo = window.location.pathname.startsWith('/advenzo') || window.location.pathname.startsWith('/content/advenzo');
+      const isProventa = window.location.pathname.startsWith('/proventa') || window.location.pathname.startsWith('/content/proventa');
+      if (isAdvenzo) a.href = '/advenzo/';
+      else if (isProventa) a.href = '/proventa/';
+      else a.href = '/';
       logo.parentElement.insertBefore(a, logo);
       a.append(logo);
     }

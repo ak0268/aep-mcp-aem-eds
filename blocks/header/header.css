@@ -500,3 +500,131 @@ body.advenzo .header-banner .glide__arrow {
     border: none;
     padding: 4px 8px;
 }
+
+/* ==========================================
+   proventa theme overrides — header
+   ========================================== */
+body.proventa header .nav-wrapper {
+    background-color: #f2f2f2;
+    color: #0d0700;
+    border-bottom: 1px solid rgb(13 7 0 / 10%);
+}
+
+body.proventa header nav {
+    font-family: 'Inter', sans-serif;
+    height: 72px;
+    max-width: 1280px;
+    padding: 0 64px;
+    gap: 0 32px;
+}
+
+body.proventa header nav[aria-expanded='true'] {
+    background-color: #f2f2f2;
+}
+
+body.proventa header nav a:any-link {
+    color: #0d0700;
+}
+
+body.proventa header nav .nav-brand img {
+    width: 84px;
+    height: 36px;
+}
+
+body.proventa header nav .nav-hamburger-icon,
+body.proventa header nav .nav-hamburger-icon::before,
+body.proventa header nav .nav-hamburger-icon::after {
+    background: #0d0700;
+}
+
+body.proventa header nav .nav-sections ul {
+    font-size: 16px;
+}
+
+body.proventa header nav .nav-sections ul > li {
+    font-weight: 400;
+}
+
+body.proventa header nav .nav-sections a.button:any-link {
+    color: #0d0700;
+    font-weight: 400;
+}
+
+@media (width >= 900px) {
+    body.proventa header nav {
+        gap: 0 32px;
+        padding: 0 64px;
+    }
+
+    body.proventa header nav .nav-sections ul {
+        gap: 32px;
+    }
+
+    body.proventa header nav .nav-sections .nav-drop::after {
+        border-color: #0d0700;
+    }
+
+    body.proventa header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
+        background-color: #f2f2f2;
+        border: 1px solid rgb(13 7 0 / 15%);
+        border-radius: 8px;
+    }
+
+    body.proventa header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
+        color: #0d0700;
+    }
+}
+
+body.proventa header nav .nav-tools .icon img {
+    filter: none;
+}
+
+body.proventa header nav .nav-tools {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+body.proventa header nav .nav-tools a:any-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 6px;
+    padding: 8px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: #ffb300;
+    border: 1px solid #ffb300;
+    color: #0d0700;
+    box-shadow:
+        0 1px 2px 0 rgb(13 7 0 / 5%),
+        inset 0 -2px 1px rgb(0 0 0 / 20%),
+        inset 0 2px 1px rgb(255 255 255 / 25%);
+}
+
+body.proventa header nav .nav-tools a:hover {
+    background-color: #e6a200;
+    border-color: #e6a200;
+}
+
+/* proventa header banner */
+body.proventa .header-banner {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid rgb(13 7 0 / 10%);
+}
+
+body.proventa .header-banner .glide__slide__wrapper {
+    color: #0d0700;
+}
+
+body.proventa .header-banner .glide__slide__wrapper a {
+    color: #ffb300;
+}
+
+body.proventa .header-banner .glide__arrow {
+    color: #ffb300;
+    font-weight: 700;
+    background: none;
+    border: none;
+}

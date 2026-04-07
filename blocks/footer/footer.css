@@ -401,3 +401,201 @@ body.advenzo footer .footer-bottom ul {
         margin-top: 80px;
     }
 }
+
+/* ==========================================
+   proventa theme overrides — footer
+   ========================================== */
+body.proventa footer {
+    background-color: #fff;
+    color: #0d0700;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+body.proventa footer .footer {
+    max-width: 1280px;
+    padding: 80px 64px 0;
+    gap: 80px;
+}
+
+body.proventa footer .footer p {
+    color: #0d0700;
+}
+
+body.proventa footer .footer-logo picture img {
+    width: 84px;
+    height: 36px;
+}
+
+body.proventa footer .footer-nav .default-content-wrapper > ul {
+    gap: 40px;
+}
+
+body.proventa footer .footer-nav .default-content-wrapper > ul > li > p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #0d0700;
+    margin-bottom: 16px;
+}
+
+body.proventa footer .footer-nav .sub-items {
+    gap: 0;
+}
+
+body.proventa footer .footer-nav .sub-items li {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 8px 0;
+}
+
+body.proventa footer .footer-nav .sub-items a {
+    color: #0d0700;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+body.proventa footer .footer-nav .sub-items a:hover {
+    color: #0d0700;
+    text-decoration: underline;
+}
+
+body.proventa footer .footer-nav .sub-items .icon img {
+    filter: none;
+    width: 24px;
+    height: 24px;
+}
+
+body.proventa footer .footer-nav .sub-items li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+body.proventa footer .footer-updates {
+    gap: 24px;
+}
+
+body.proventa footer .footer-updates p:first-child {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #0d0700;
+}
+
+body.proventa footer .footer-updates p:nth-child(2) {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #0d0700;
+}
+
+body.proventa footer .footer-updates .default-content-wrapper {
+    margin-bottom: 24px;
+}
+
+body.proventa footer .footer-updates .footer-subscribe-form {
+    gap: 16px;
+}
+
+body.proventa footer .footer-updates input[type="email"] {
+    background: transparent;
+    border: 1px solid rgb(13 7 0 / 15%);
+    border-radius: 6px;
+    color: #0d0700;
+    padding: 8px 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+body.proventa footer .footer-updates input[type="email"]::placeholder {
+    color: rgb(13 7 0 / 50%);
+}
+
+body.proventa footer .footer-updates input[type="email"]:focus {
+    border-color: #0d0700;
+}
+
+body.proventa footer .footer-updates button {
+    background: transparent;
+    color: #0d0700;
+    border: 1px solid rgb(13 7 0 / 15%);
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+body.proventa footer .footer-updates button:hover {
+    background-color: transparent;
+    color: #0d0700;
+    border-color: #0d0700;
+}
+
+body.proventa footer .footer-bottom {
+    border-top: 1px solid rgb(13 7 0 / 15%);
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.proventa footer .footer-bottom p {
+    color: #0d0700;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+body.proventa footer .footer-bottom a {
+    color: #0d0700;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+body.proventa footer .footer-bottom nav,
+body.proventa footer .footer-bottom ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (width >= 900px) {
+    body.proventa footer .footer {
+        grid-template-columns: 500px 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 128px;
+        row-gap: 0;
+        padding: 80px 64px 0;
+    }
+
+    body.proventa footer .footer-logo {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 24px;
+    }
+
+    body.proventa footer .footer-updates {
+        grid-column: 1;
+        grid-row: 1;
+        padding-top: 60px;
+    }
+
+    body.proventa footer .footer-nav {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    body.proventa footer .footer-bottom {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        margin-top: 80px;
+    }
+}
