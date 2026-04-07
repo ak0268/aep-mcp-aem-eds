@@ -145,14 +145,23 @@ body.proventa .cards .cards-card-body {
     gap: 8px;
 }
 
-body.proventa .cards .cards-card-body h2,
-body.proventa .cards .cards-card-body h3 {
+body.proventa .cards .cards-card-body h2 {
     font-family: 'Urbanist', sans-serif;
     font-weight: 700;
     font-size: 28px;
     line-height: 31px;
     letter-spacing: -0.28px;
     text-transform: uppercase;
+    color: #0d0700;
+    margin: 0;
+}
+
+body.proventa .cards .cards-card-body h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: normal;
+    text-transform: none;
     color: #0d0700;
     margin: 0;
 }

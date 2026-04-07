@@ -175,10 +175,21 @@ body.proventa .offers {
 body.proventa .offers h2 {
     font-family: 'Urbanist', sans-serif;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: -0.48px;
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: -0.28px;
     text-transform: uppercase;
+    color: #0d0700;
+    text-align: center;
+    margin: 0;
+}
+
+body.proventa .offers h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: normal;
+    text-transform: none;
     color: #0d0700;
     text-align: center;
     margin: 0;

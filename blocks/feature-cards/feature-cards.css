@@ -433,7 +433,17 @@ body.proventa .feature-cards .feature-cards-label {
     margin: 0;
 }
 
-body.proventa .feature-cards .feature-cards-content h2,
+body.proventa .feature-cards .feature-cards-content h2 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    color: #0d0700;
+    margin: 0;
+}
+
 body.proventa .feature-cards .feature-cards-content h3 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;

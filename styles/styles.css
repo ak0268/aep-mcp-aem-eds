@@ -513,3 +513,14 @@ body.proventa main .section.dark .cards > ul > li {
     background-color: #fff;
     border-color: rgb(13 7 0 / 15%);
 }
+
+/* hero inside themed sections keeps white text */
+body.proventa main .section.light .hero h1,
+body.proventa main .section.dark .hero h1 {
+    color: #fff;
+}
+
+body.proventa main .section.light .hero p,
+body.proventa main .section.dark .hero p {
+    color: #fff;
+}
