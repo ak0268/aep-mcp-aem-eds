@@ -383,7 +383,6 @@ body.proventa h5,
 body.proventa h6 {
     font-family: 'Urbanist', sans-serif;
     font-weight: 700;
-    color: #0d0700;
     text-transform: uppercase;
     letter-spacing: -0.01em;
 }
@@ -409,6 +408,27 @@ body.proventa h3 {
 body.proventa p {
     font-family: 'Inter', sans-serif;
     color: #0d0700;
+}
+
+/* heading color: dark for all blocks except hero (which sets white) */
+body.proventa main .section .default-content-wrapper h1,
+body.proventa main .section .default-content-wrapper h2,
+body.proventa main .section .default-content-wrapper h3,
+body.proventa main .section .default-content-wrapper h4,
+body.proventa main .section .default-content-wrapper h5,
+body.proventa main .section .default-content-wrapper h6,
+body.proventa .cards h1, body.proventa .cards h2, body.proventa .cards h3,
+body.proventa .feature-cards h2, body.proventa .feature-cards h3,
+body.proventa .hero-featured h2, body.proventa .hero-featured h3,
+body.proventa .offers h2, body.proventa .offers h3,
+body.proventa .columns h1, body.proventa .columns h2,
+body.proventa .columns h3, body.proventa .columns h4 {
+    color: #0d0700;
+}
+
+/* section with default-content-wrapper: bottom padding */
+body.proventa main .section > .default-content-wrapper {
+    padding-bottom: 20px;
 }
 
 /* proventa primary button */
