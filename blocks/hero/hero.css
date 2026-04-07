@@ -1,126 +1,215 @@
 .hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 25px;
-  padding-top: 45px;
+    max-width: unset;
+    padding: 25px;
+    padding-top: 45px;
 }
 
 .hero {
-  position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
-  color: inherit;
-  max-width: 1264px;
-  margin: 0 auto;
-  border: 1px solid rgba(128 128 128 / 15%);
-  border-radius: 12px;
-  overflow: hidden;
+    position: relative;
+    padding: 40px 24px;
+    min-height: 300px;
+    color: inherit;
+    max-width: 1264px;
+    margin: 0 auto;
+    border: 1px solid rgba(128 128 128 / 15%);
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .hero h1 {
-  font-size: var(--heading-font-size-xl);
-  line-height: 1.1;
-  margin: 0 0 24px;
-  color: inherit;
+    font-size: var(--heading-font-size-xl);
+    line-height: 1.1;
+    margin: 0 0 24px;
+    color: inherit;
 }
 
 .hero p {
-  font-size: var(--body-font-size-s);
-  line-height: 1.6;
-  margin: 0 0 16px;
-  opacity: 0.8;
+    font-size: var(--body-font-size-s);
+    line-height: 1.6;
+    margin: 0 0 16px;
+    opacity: 0.8;
 }
 
 .hero .hero-image {
-  overflow: hidden;
-  margin-top: 24px;
+    overflow: hidden;
+    margin-top: 24px;
 }
 
 .hero .hero-image picture {
-  display: block;
+    display: block;
 }
 
 .hero img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 /* buttons in hero */
 .hero .hero-buttons {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .hero .hero-buttons p.button-container {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .hero a.button:any-link {
-  margin: 0;
-  border-radius: 20px;
-  padding: 8px 20px;
-  font-size: 14px;
-  font-weight: 500;
+    margin: 0;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .hero a.button:not(.secondary):any-link {
-  background-color: #3b63fb;
-  border-color: #3b63fb;
-  color: #fff;
+    background-color: #3b63fb;
+    border-color: #3b63fb;
+    color: #fff;
 }
 
 .hero a.button:not(.secondary):hover {
-  background-color: #1d3ecf;
-  border-color: #1d3ecf;
+    background-color: #1d3ecf;
+    border-color: #1d3ecf;
 }
 
 .hero a.button.secondary:any-link {
-  background-color: transparent;
-  border: 1px solid currentcolor;
-  border-color: rgba(128 128 128 / 40%);
-  color: inherit;
-  padding: 8px 20px;
+    background-color: transparent;
+    border: 1px solid currentcolor;
+    border-color: rgba(128 128 128 / 40%);
+    color: inherit;
+    padding: 8px 20px;
 }
 
 .hero a.button.secondary:hover {
-  border-color: currentcolor;
+    border-color: currentcolor;
 }
 
 @media (width >= 900px) {
-  .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    align-items: stretch;
-    padding: 0;
-    min-height: 480px;
-  }
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        align-items: stretch;
+        padding: 0;
+        min-height: 480px;
+    }
 
-  .hero .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 60px 48px;
-  }
+    .hero .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 48px;
+    }
 
-  .hero h1 {
-    font-size: var(--heading-font-size-xxl);
-  }
+    .hero h1 {
+        font-size: var(--heading-font-size-xxl);
+    }
 
-  .hero .hero-image {
-    margin-top: 0;
-    height: 100%;
-  }
+    .hero .hero-image {
+        margin-top: 0;
+        height: 100%;
+    }
 
-  .hero .hero-image picture {
-    height: 100%;
-  }
+    .hero .hero-image picture {
+        height: 100%;
+    }
 
-  .hero img {
-    height: 100%;
-    min-height: 400px;
-  }
+    .hero img {
+        height: 100%;
+        min-height: 400px;
+    }
+}
+
+/* advenzo theme overrides */
+body.advenzo .hero {
+    background-color: #f2f2f2;
+    border: 1px solid rgb(12 11 10 / 15%);
+    border-radius: 16px;
+    color: #0c0b0a;
+}
+
+body.advenzo .hero h1 {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: 0.72px;
+    color: #0c0b0a;
+}
+
+body.advenzo .hero p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 29px;
+    color: #0c0b0a;
+    opacity: 1;
+}
+
+body.advenzo .hero .hero-content {
+    gap: 32px;
+}
+
+body.advenzo .hero .hero-buttons {
+    gap: 16px;
+}
+
+body.advenzo .hero a.button:any-link {
+    border-radius: 12px;
+    padding: 6px 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+body.advenzo .hero a.button:not(.secondary):any-link {
+    background-color: #d9572b;
+    border-color: #d9572b;
+    color: #fff;
+}
+
+body.advenzo .hero a.button:not(.secondary):hover {
+    background-color: #b8451f;
+    border-color: #b8451f;
+}
+
+body.advenzo .hero a.button.secondary:any-link {
+    background-color: transparent;
+    border: 1px solid rgb(12 11 10 / 15%);
+    color: #0c0b0a;
+}
+
+body.advenzo .hero a.button.secondary:hover {
+    border-color: #0c0b0a;
+}
+
+@media (width >= 900px) {
+    body.advenzo .hero {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    body.advenzo .hero .hero-content {
+        padding: 48px;
+    }
+
+    body.advenzo .hero h1 {
+        font-size: 72px;
+        line-height: 86px;
+    }
+
+    body.advenzo .hero p {
+        font-size: 18px;
+    }
+
+    body.advenzo .hero img {
+        height: 640px;
+        min-height: 640px;
+    }
 }

@@ -346,7 +346,10 @@ function decorateTemplateAndTheme() {
   };
   const template = getMetadata('template');
   if (template) addClasses(document.body, template);
-  const theme = getMetadata('theme');
+  let theme = getMetadata('theme');
+  if (window.location.pathname.startsWith('/advenzo') || window.location.pathname.startsWith('/content/advenzo')) {
+    theme = 'advenzo';
+  }
   if (theme) addClasses(document.body, theme);
 }
 

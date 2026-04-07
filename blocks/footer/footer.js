@@ -1,6 +1,7 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
+
 function decorateSubscribeForm(section) {
   let inputEl = null;
   let buttonEl = null;
@@ -42,7 +43,10 @@ function decorateSubscribeForm(section) {
  */
 export default async function decorate(block) {
   const footerMeta = getMetadata('footer');
-  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
+  let footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
+  if (window.location.pathname.startsWith('/advenzo') || window.location.pathname.startsWith('/content/advenzo')) {
+    footerPath = '/advenzo/footer';
+  }
   const fragment = await loadFragment(footerPath);
 
   block.textContent = '';

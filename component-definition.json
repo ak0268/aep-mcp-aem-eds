@@ -197,7 +197,11 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Feature Card",
-                  "model": "feature-card"
+                  "model": "feature-card",
+                  "label": "",
+                  "title": "Card Title",
+                  "description": "",
+                  "linkText": "Learn"
                 }
               }
             }

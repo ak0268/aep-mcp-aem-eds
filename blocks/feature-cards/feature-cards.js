@@ -42,6 +42,8 @@ function buildCard(row) {
   moveInstrumentation(row, li);
 
   const cells = [...row.children];
+  if (!cells.length) return li;
+
   const imageCell = cells.find((c) => c.querySelector('picture'));
   const contentCells = cells.filter((c) => !c.querySelector('picture'));
 
@@ -112,12 +114,17 @@ function buildCard(row) {
   return li;
 }
 
+function isItemRow(row) {
+  // rows with data-aue-resource are Universal Editor managed items (feature-card)
+  return row.hasAttribute('data-aue-resource');
+}
+
 export default function decorate(block) {
   const rows = [...block.children];
 
-  // split rows: header rows (no picture) come first, then card rows (with picture)
+  // split rows: header rows (no picture, not a UE item) come first, then card rows
   const headerRows = [];
-  while (rows.length && !isCardRow(rows[0])) {
+  while (rows.length && !isCardRow(rows[0]) && !isItemRow(rows[0])) {
     headerRows.push(rows.shift());
   }
   const header = buildHeader(headerRows);

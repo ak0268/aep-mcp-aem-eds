@@ -1,39 +1,118 @@
 .cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    grid-gap: 24px;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
-  border-radius: 12px;
-  overflow: hidden;
+    border: 1px solid #dadada;
+    background-color: var(--background-color);
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+    margin: 16px;
 }
 
 .cards .cards-card-image {
-  line-height: 0;
+    line-height: 0;
 }
 
 .section.dark .cards > ul > li {
-  background-color: #24211a;
-  border-color: #3a3730;
+    background-color: #24211a;
+    border-color: #3a3730;
 }
 
 .section.black .cards > ul > li {
-  background-color: var(--header-bg-color);
-  border-color: #2a2a2d;
+    background-color: var(--header-bg-color);
+    border-color: #2a2a2d;
 }
 
 .cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+/* advenzo theme overrides */
+body.advenzo .cards > ul {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 32px;
+}
+
+body.advenzo .cards > ul > li {
+    border: 1px solid rgb(12 11 10 / 15%);
+    background-color: #f2f2f2;
+    border-radius: 16px;
+}
+
+body.advenzo .cards > ul > li img {
+    height: 233px;
+    aspect-ratio: unset;
+    object-fit: cover;
+}
+
+body.advenzo .cards .cards-card-body {
+    margin: 0;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* first paragraph as tagline label */
+body.advenzo .cards .cards-card-body > p:first-child {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0c0b0a;
+    margin: 0;
+}
+
+/* heading */
+body.advenzo .cards .cards-card-body h2,
+body.advenzo .cards .cards-card-body h3 {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 0.36px;
+    color: #0c0b0a;
+    margin: 0;
+}
+
+/* body text */
+body.advenzo .cards .cards-card-body p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #0c0b0a;
+    margin: 0;
+}
+
+/* links inside cards-card-body p: primary button style */
+body.advenzo .cards .cards-card-body p a:any-link {
+    display: inline-block;
+    background-color: #d9572b;
+    border: 1px solid #d9572b;
+    color: #fff;
+    border-radius: 12px;
+    padding: 6px 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+body.advenzo .cards .cards-card-body p a:hover {
+    background-color: #b8451f;
+    border-color: #b8451f;
+    color: #fff;
+    text-decoration: none;
 }
