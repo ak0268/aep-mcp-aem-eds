@@ -230,6 +230,7 @@ body.proventa .hero {
     min-height: 500px;
     padding: 40px 24px;
     overflow: hidden;
+    max-width: none;
 }
 
 body.proventa .hero::before {
@@ -306,9 +307,9 @@ body.proventa .hero a.button:not(.secondary):any-link {
     padding: 10px 24px;
     font-size: 16px;
     box-shadow:
-        0 1px 2px 0 rgb(13 7 0 / 5%),
-        inset 0 -2px 1px rgb(0 0 0 / 20%),
-        inset 0 2px 1px rgb(255 255 255 / 25%);
+            0 1px 2px 0 rgb(13 7 0 / 5%),
+            inset 0 -2px 1px rgb(0 0 0 / 20%),
+            inset 0 2px 1px rgb(255 255 255 / 25%);
 }
 
 body.proventa .hero a.button:not(.secondary):hover {
