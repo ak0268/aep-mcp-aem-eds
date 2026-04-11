@@ -132,7 +132,6 @@ body.proventa .cards > ul > li {
 }
 
 body.proventa .cards > ul > li img {
-    height: 228px;
     aspect-ratio: unset;
     object-fit: cover;
 }

@@ -49,6 +49,9 @@ export default async function decorate(block) {
   if (window.location.pathname.startsWith('/proventa') || window.location.pathname.startsWith('/content/proventa')) {
     footerPath = '/proventa/footer';
   }
+  if (window.location.pathname.startsWith('/vitesse') || window.location.pathname.startsWith('/content/vitesse')) {
+    footerPath = '/vitesse/footer';
+  }
   const fragment = await loadFragment(footerPath);
 
   block.textContent = '';
