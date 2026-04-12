@@ -420,6 +420,7 @@ body.proventa .hero-featured .hero-featured-body p {
 
 body.proventa .hero-featured .hero-featured-body a.button:any-link {
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -459,16 +460,16 @@ body.proventa .hero-featured .hero-featured-image {
         max-width: 50%;
         border-radius: 8px;
         overflow: hidden;
-        height: 600px;
     }
 
     body.proventa .hero-featured .hero-featured-image img {
         height: 100%;
         object-fit: cover;
+        border-radius: 8px;
     }
 
     body.proventa .hero-featured .hero-featured-body h2 {
-        font-size: 72px;
+        font-size: 28px;
         line-height: 72px;
         letter-spacing: -0.72px;
     }

@@ -1,16 +1,5 @@
-import {
-  decorateBlocks,
-  decorateButtons,
-  decorateIcons,
-  decorateSections,
-  decorateTemplateAndTheme,
-  loadCSS,
-  loadFooter,
-  loadHeader,
-  loadSection,
-  loadSections,
-  waitForFirstImage,
-} from './aem.js';
+import { decorateBlocks, decorateButtons, decorateIcons, decorateSections, decorateTemplateAndTheme, loadCSS, loadFooter, loadHeader, loadSection, loadSections, waitForFirstImage } from './aem.js';
+
 
 /**
  * Moves all the attributes from a given elmenet to another given element.
@@ -226,7 +215,7 @@ async function getElementForProposition(proposition) {
 function getImpersonationIdentityMap() {
   const STORAGE_KEY = 'eds-impersonation-email';
   const EMAIL_NAMESPACE = 'Email';
-  
+
   try {
     const storedEmail = localStorage.getItem(STORAGE_KEY);
     if (storedEmail && storedEmail.trim() !== '') {
@@ -235,7 +224,7 @@ function getImpersonationIdentityMap() {
           {
             id: storedEmail.trim(),
             primary: true,
-            authenticatedState: "authenticated",
+            authenticatedState: 'authenticated',
           },
         ],
       };
@@ -259,7 +248,7 @@ function enrichEventDataWithImpersonation(eventData) {
 
   // Clone the event data to avoid mutating the original
   const enriched = { ...eventData };
-  
+
   // Ensure xdm exists
   if (!enriched.xdm) {
     enriched.xdm = {};
@@ -329,7 +318,25 @@ alloyLoadedPromise.then(() => getAndApplyRenderDecisions());
  * Loads everything needed to get to LCP.
  * @param {Element} doc The container element
  */
+async function checkRedirects() {
+  try {
+    const resp = await fetch('/redirects.json');
+    if (!resp.ok) return;
+    const { redirects } = await resp.json();
+    if (!Array.isArray(redirects)) return;
+    const { pathname, search, hash } = window.location;
+    const match = redirects.find((r) => pathname === r.from);
+    if (match) {
+      const newPath = pathname.replace(match.from, match.to);
+      window.location.replace(match.to + search + hash);
+    }
+  } catch (e) {
+    // silently ignore redirect errors
+  }
+}
+
 async function loadEager(doc) {
+  await checkRedirects();
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');

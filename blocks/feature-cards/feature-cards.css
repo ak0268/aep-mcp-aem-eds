@@ -419,7 +419,7 @@ body.proventa .feature-cards .feature-cards-content {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    text-align: center;
+    text-align: left;
 }
 
 body.proventa .feature-cards .feature-cards-label {
@@ -430,6 +430,8 @@ body.proventa .feature-cards .feature-cards-label {
     color: #0d0700;
     text-transform: none;
     margin: 0;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 body.proventa .feature-cards .feature-cards-content h2 {
@@ -444,10 +446,9 @@ body.proventa .feature-cards .feature-cards-content h2 {
 }
 
 body.proventa .feature-cards .feature-cards-content h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
     letter-spacing: normal;
     text-transform: none;
     color: #0d0700;
@@ -455,18 +456,35 @@ body.proventa .feature-cards .feature-cards-content h3 {
 }
 
 body.proventa .feature-cards .feature-cards-content p {
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 31px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
     color: #0d0700;
     opacity: 1;
 }
 
-body.proventa .feature-cards .feature-cards-content a {
+/* links in feature-cards: primary button style (matches cards) */
+body.proventa .feature-cards .feature-cards-link a:any-link {
+    display: inline-block;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 16px;
+    line-height: 24px;
+    color: #0d0700;
+    text-decoration: none;
+    background-color: #ffb300;
+    border: 1px solid #ffb300;
+    border-radius: 6px;
+    padding: 10px 24px;
+    box-shadow:
+        0 1px 2px 0 rgb(13 7 0 / 5%),
+        inset 0 -2px 1px rgb(0 0 0 / 20%),
+        inset 0 2px 1px rgb(255 255 255 / 25%);
+}
+
+body.proventa .feature-cards .feature-cards-link a:hover {
+    background-color: #e6a200;
+    border-color: #e6a200;
     color: #0d0700;
 }
 

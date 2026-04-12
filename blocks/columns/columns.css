@@ -1,35 +1,35 @@
 .columns > div {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .columns img {
-  width: 100%;
+    width: 100%;
 }
 
 .columns > div > div {
-  order: 1;
+    order: 1;
 }
 
 .columns > div > .columns-img-col {
-  order: 0;
+    order: 0;
 }
 
 .columns > div > .columns-img-col img {
-  display: block;
+    display: block;
 }
 
 @media (width >= 900px) {
-  .columns > div {
-    align-items: center;
-    flex-direction: unset;
-    gap: 24px;
-  }
+    .columns > div {
+        align-items: center;
+        flex-direction: unset;
+        gap: 24px;
+    }
 
-  .columns > div > div {
-    flex: 1;
-    order: unset;
-  }
+    .columns > div > div {
+        flex: 1;
+        order: unset;
+    }
 }
 
 /* ==========================================
@@ -106,8 +106,8 @@ body.proventa .columns .columns-img-col {
 }
 
 body.proventa .columns .columns-img-col img {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     border-radius: 8px;
 }
