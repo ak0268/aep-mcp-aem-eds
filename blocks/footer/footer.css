@@ -1,20 +1,115 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: var(--navy-color);
+  color: var(--muted-color);
+  font-size: var(--body-font-size-s);
 }
 
 footer .footer > div {
   margin: auto;
   max-width: 1200px;
-  padding: 40px 24px 24px;
+  padding: 64px 24px 24px;
 }
 
 footer .footer p {
   margin: 0;
 }
 
+footer .footer a:any-link {
+  color: var(--muted-color);
+  text-decoration: none;
+}
+
+footer .footer a:hover {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+footer .footer .columns > div {
+  gap: 32px;
+}
+
+footer .footer .columns > div > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+footer .footer h3 {
+  color: var(--background-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+footer .footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer ul li {
+  margin-bottom: 12px;
+}
+
+footer .footer .icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(255 255 255 / 10%);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+footer .footer .icon img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(0.6);
+}
+
+footer .footer .icon:hover img {
+  filter: brightness(0) invert(1);
+}
+
+footer .footer > div > .default-content-wrapper:last-child {
+  border-top: 1px solid #1e2939;
+  padding-top: 24px;
+  margin-top: 48px;
+  text-align: center;
+}
+
+/* Brand section in footer */
+footer .footer .columns > div > div:first-child p:first-of-type {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--background-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+footer .footer .columns > div > div:first-child p:first-of-type .icon {
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  margin-right: 0;
+}
+
+footer .footer .columns > div > div:first-child p:first-of-type .icon img {
+  width: 32px;
+  height: 32px;
+  filter: none;
+}
+
 @media (width >= 900px) {
   footer .footer > div {
-    padding: 40px 32px 24px;
+    padding: 64px 32px 24px;
+  }
+
+  footer .footer .columns > div {
+    flex-direction: row;
+    gap: 48px;
   }
 }
