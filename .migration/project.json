@@ -1,0 +1,8 @@
+{
+  "type": "xwalk",
+  "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
+  "contentHostUrl": "https://author-p24103-e71623.adobeaemcloud.com",
+  "aemSitePath": "/content/vitesse",
+  "aemAssetsFolderPath": "/content/dam/aep-mcp-aem-eds",
+  "baseUrl": "https://main--aep-mcp-aem-eds--epm-aem.aem.page"
+}
