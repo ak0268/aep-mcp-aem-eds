@@ -170,6 +170,7 @@ header nav .nav-sections {
   flex: 1 1 auto;
   display: none;
   visibility: hidden;
+  text-align: right;
 }
 
 header nav[aria-expanded='true'] .nav-sections {
@@ -241,7 +242,8 @@ header nav .nav-sections ul > li:first-child {
 
   header nav .nav-sections ul {
     display: flex;
-    gap: 24px;
+    justify-content: flex-end;
+    gap: 32px;
     margin: 0;
   }
 

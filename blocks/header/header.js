@@ -1,4 +1,4 @@
-import { getMetadata } from '../../scripts/aem.js';
+import { decorateIcons } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 // media query match that indicates mobile/tablet width
@@ -113,9 +113,8 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
  * @param {Element} block The header block element
  */
 export default async function decorate(block) {
-  // load nav as fragment
-  const navMeta = getMetadata('nav');
-  const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
+  // always load nav from /nav
+  const navPath = '/nav';
   const fragment = await loadFragment(navPath);
 
   // decorate nav DOM
@@ -135,6 +134,15 @@ export default async function decorate(block) {
   if (brandLink) {
     brandLink.className = '';
     brandLink.closest('.button-container').className = '';
+  }
+
+  // ensure brand has airplane icon
+  const brandAnchor = navBrand.querySelector('a');
+  if (brandAnchor && !brandAnchor.querySelector('.icon-airplane')) {
+    const iconSpan = document.createElement('span');
+    iconSpan.classList.add('icon', 'icon-airplane');
+    brandAnchor.prepend(iconSpan);
+    decorateIcons(navBrand);
   }
 
   const navSections = nav.querySelector('.nav-sections');

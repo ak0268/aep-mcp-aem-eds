@@ -26,6 +26,7 @@ footer .footer a:hover {
 
 footer .footer .columns > div {
   gap: 32px;
+  align-items: flex-start;
 }
 
 footer .footer .columns > div > div {
