@@ -32,10 +32,16 @@
   }
 }
 
+/* Mission variant - text + rounded image side by side */
+.columns.mission > div {
+  gap: 40px;
+  padding: 60px 0;
+}
+
 /* Features variant */
 .columns.features > div {
   gap: 32px;
-  padding: 40px 0;
+  padding: 40px;
 }
 
 .columns.features > div > div {
@@ -74,7 +80,35 @@
   margin-top: 0.25em;
 }
 
+/* Mission variant continued - deeper selectors */
+.columns.mission > div > div:first-child h2 {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.columns.mission > div > div:first-child p {
+  color: var(--dark-color);
+  font-size: var(--body-font-size-s);
+  line-height: 1.75;
+}
+
+.columns.mission .columns-img-col img {
+  border-radius: 16px;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+}
+
 @media (width >= 900px) {
+  .columns.mission > div {
+    gap: 64px;
+    padding: 80px 0;
+    align-items: center;
+  }
+
+  .columns.mission > div > div:first-child p {
+    font-size: 18px;
+  }
+
   .columns.features > div {
     gap: 48px;
     padding: 60px 0;
