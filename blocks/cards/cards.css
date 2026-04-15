@@ -28,7 +28,7 @@
 
 /* Team variant */
 .cards.team > ul {
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   gap: 32px;
 }
 
@@ -68,7 +68,7 @@
 
 /* Values variant */
 .cards.values > ul {
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   gap: 24px;
 }
 
@@ -77,10 +77,12 @@
   border-radius: 14px;
   padding: 32px 24px;
   background-color: var(--background-color);
+  text-align: left;
 }
 
 .cards.values .cards-card-body {
   margin: 0;
+  text-align: left;
 }
 
 .cards.values .cards-card-body .icon {
@@ -113,4 +115,11 @@
   font-size: var(--body-font-size-s);
   line-height: 1.5;
   margin-top: 0;
+}
+
+@media (width >= 900px) {
+  .cards.team > ul,
+  .cards.values > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
