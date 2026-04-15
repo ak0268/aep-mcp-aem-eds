@@ -71,6 +71,20 @@
   background-color: var(--link-hover-color);
 }
 
+/* Centered variant for subpage heroes */
+.hero-container.centered .hero .hero-overlay {
+  background: linear-gradient(180deg, rgb(0 0 0 / 60%) 0%, rgb(0 0 0 / 40%) 100%);
+}
+
+.hero-container.centered .hero .hero-content {
+  text-align: center;
+}
+
+.hero-container.centered .hero h1,
+.hero-container.centered .hero p {
+  max-width: none;
+}
+
 @media (width >= 900px) {
   .hero {
     padding: 120px 32px;
@@ -83,5 +97,10 @@
 
   .hero p {
     max-width: 500px;
+  }
+
+  .hero-container.centered .hero {
+    min-height: 400px;
+    justify-content: center;
   }
 }

@@ -315,3 +315,11 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+main .section.centered {
+  text-align: center;
+}
+
+main .section.centered > div {
+  margin: auto;
+}

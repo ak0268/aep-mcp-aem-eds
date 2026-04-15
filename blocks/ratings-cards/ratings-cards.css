@@ -1,0 +1,133 @@
+.ratings-cards-container {
+  background-color: #f9fafb;
+  padding: 40px 0;
+}
+
+.ratings-cards-container .ratings-cards-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.ratings-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.ratings-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: var(--background-color);
+  overflow: hidden;
+  box-shadow: 0 4px 6px -4px rgb(0 0 0 / 10%), 0 10px 15px -3px rgb(0 0 0 / 10%);
+}
+
+.ratings-card-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+
+.ratings-card-image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.ratings-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ratings-card-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  background-color: rgb(255 255 255 / 95%);
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--text-color);
+}
+
+.ratings-card-badge .icon {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+}
+
+.ratings-card-badge .icon img {
+  width: 16px;
+  height: 16px;
+}
+
+.ratings-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
+.ratings-card-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ratings-card-location .icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: inline-flex;
+}
+
+.ratings-card-location .icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.ratings-card-location h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--text-color);
+}
+
+.ratings-card-description {
+  margin: 0;
+  font-size: var(--body-font-size-s);
+  line-height: 1.5;
+  color: var(--dark-color);
+}
+
+@media (width >= 600px) {
+  .ratings-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .ratings-cards-container {
+    padding: 60px 0;
+  }
+
+  .ratings-cards-container .ratings-cards-wrapper {
+    padding: 0 32px;
+  }
+
+  .ratings-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
